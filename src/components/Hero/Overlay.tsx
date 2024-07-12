@@ -12,7 +12,7 @@ const Overlay: React.FC = () => {
   const [imperial, setImperial] = useState<boolean>(true);
   const [metric, setMetric] = useState<boolean>(false);
   const [weight, setWeight] = useState<string>("kg");
-  const [height, setHeight] = useState<string>("cm");
+  const [height, setHeight] = useState<string>("m");
   const [heightValue, setHeightValue] = useState<string | number>("");
   const [weightValue, setWeightValue] = useState<string | number>("");
   const [bmiValue, setBmiValue] = useState<number>(0);
@@ -32,7 +32,7 @@ const Overlay: React.FC = () => {
   useEffect(() => {
     if (imperial && !metric) {
       setWeight("kg");
-      setHeight("cm");
+      setHeight("m");
     } else if (!imperial && metric) {
       setWeight("lb");
       setHeight("in");
