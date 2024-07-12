@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Hero from "./pages/Hero";
 
-export default function App() {
+const App:React.FC  = ()=> {
   return (
     <Router>
       <Routes>
@@ -14,3 +14,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App

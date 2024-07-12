@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { FC } from "react";
+
 
 // type unitTypes = {
 //   imperial:boolean,
@@ -8,7 +8,7 @@ import { FC } from "react";
 
 // }
 
-const Overlay: FC = () => {
+const Overlay: React.FC = () => {
   const [imperial, setImperial] = useState<boolean>(true);
   const [metric, setMetric] = useState<boolean>(false);
   const [weight, setWeight] = useState<string>("kg");

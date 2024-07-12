@@ -1,7 +1,8 @@
 import React from "react";
 import Overlay from "../components/Hero/Overlay";
 
-const Hero = () => {
+
+const Hero:React.FC = () => {
   return (
     <main>
       <Overlay />
